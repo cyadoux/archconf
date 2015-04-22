@@ -1,7 +1,7 @@
 syntax enable
-set background=dark
+set background=light
 let g:solarized_termcolors=256
-colorscheme solarized
+colorscheme Tomorrow-Night
 set shiftwidth=4
 set number
 set tabstop=4
