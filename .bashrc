@@ -13,8 +13,8 @@ esac
 
 # Add vim as default editor
 export EDITOR=vim
-export TERMINAL=urxvt
-export BROWSER=qupzilla
+export TERMINAL=xterm
+export BROWSER=surf
 export PROMPT_COMMAND='echo -ne "\033]0;$PWD\007"'
 
 # don't put duplicate lines or lines starting with space in the history.
