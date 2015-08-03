@@ -1,7 +1,12 @@
+Xft*antialias: true
+Xft*autohint: true
+XTerm*toolBar: off
+XTerm*locale: true
+xterm*termName: xterm-256color
 XTerm*faceName: FoundersGroteskMono
 XTerm*faceSize: 11
 XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
-
+XTerm*bellIsUrgent: true
 
 XTerm*background:           #333333
 XTerm*foreground:           #CCCCCC
@@ -33,3 +38,4 @@ xterm*color14:              #99FFFF
 !!WHT
 xterm*color7:               #CCCCCC
 xterm*color15:              #FFFFFF
+

@@ -28,30 +28,9 @@ shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
 
-# set pager
-export PAGER=/usr/bin/most
-
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
-
-# Gtk themes 
-export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
-
-xhost +local:root > /dev/null 2>&1
-
-complete -cf sudo
-complete -cf man
-
-# Shopt
-shopt -s autocd
-shopt -s cdspell
-shopt -s cmdhist
-shopt -s dotglob
-shopt -s expand_aliases
-shopt -s extglob
-shopt -s hostcomplete
-shopt -s nocaseglob
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -63,27 +42,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
-fi
-
-
-# Bash Completion
-if [ -f /etc/bash_completion ]; then
-	    . /etc/bash_completion
-fi
-
-# Alias definitions.
-if [ -x ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
-# Function definitions.
-if [ -x ~/.bash_functions ]; then
-    . ~/.bash_functions
-fi
-
-# Prompt definitions.
-if [ -x ~/.bash_prompt ]; then
-    . ~/.bash_prompt
 fi
 
 ## MISC ALIASES ##
@@ -102,10 +60,6 @@ alias missing='pacman -Qk'
 alias trash='pacman -Qdt'
 
 alias speedtest='speedtest-cli'
-
-alias tint2='killall -SIGUSR1 tint2'
-
-alias wvdial='sudo wvdial'
 
 # Color man pages
 man() {
